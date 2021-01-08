@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/HW7.dir/main.c.o CMakeFiles/HW7.dir/grades.c.o  -o HW7   -L/home/mamat/CLionProjects/HW7/libs  -Wl,-rpath,/home/mamat/CLionProjects/HW7/libs -llinked-list 
