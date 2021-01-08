@@ -1,63 +1,38 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include "linked-list.h"
-
-
-
-typedef int kuku;
-typedef int* kuku2;
-
-struct numbers
-{
-  int num1;
-  int num2;
-  double num3;
-};
-typedef struct numbers numbers_t;
-
-typedef double(*func)(int, double);
-typedef void (*n_func)(struct numbers*, int);
-
-void add_number(struct numbers* head_num, int x){
-  head_num->num1 = x;
-}
-bool moshe(n_func chaim){
-  struct numbers my_num;
-  my_num.num1=1;
-  my_num.num2=2;
-  my_num.num3=3.3;
-  int a = 5;
-  chaim(&my_num, a);
-  return true;
-}
-double foo(int x, double y)
-{
-  return y-x;
-}
-
-double bar(func user_func)
-{
-  double ret_val = user_func(5, 5.5);
-  return ret_val;
-}
-
-struct number
-{
-  int num1;
-};
-
-int clone_num(void *in_elem, void **out_elem){
-  struct  number *x;
-  in_elem = x;
-}
-/* User function, Destroy “element”. always succeed */
-typedef void(*element_destroy_t)(void *element);
+#include "grades.h"
 
 int main() {
-    printf("Hello, World!\n");
-    double result = bar(foo);
-    printf("%f\n", result);
-    bool b = moshe(add_number);
-  printf("%d\n", b);
-    return 0;
+  char *name1 = "Natali";
+  char *name2 = "Ziv";
+  char *course_name1 = "mamat";
+  char *course_name2 = "mavlas";
+  char *course_name3 = "infi";
+  char *course_name4 = "algrbra";
+  char *course_name5 = "mamat";
+  int grade1 = 99;
+  int grade2 = 95;
+  int grade3 = 96;
+  int grade4 = 97;
+  int grade5 = 98;
+  int id1 = 11;
+  int id2 = 22;
+  struct grades *grade_list = grades_init();
+  grades_add_student(grade_list, name1, id1);
+  grades_add_grade(grade_list, course_name1, id1, grade1);
+  grades_add_grade(grade_list, course_name2, id1, grade2);
+  grades_add_grade(grade_list, course_name3, id1, grade3);
+  grades_add_grade(grade_list, course_name4, id1, grade4);
+  grades_add_grade(grade_list, course_name5, id1, grade5);
+  grades_add_grade(grade_list, course_name5, id1, grade5);
+  grades_add_grade(grade_list, course_name1, id2, grade1);
+  grades_add_grade(grade_list, course_name2, id2, grade2);
+  grades_print_student(grade_list, id1);
+  grades_add_student(grade_list, name2, id2);
+  grades_add_grade(grade_list, course_name1, id2, grade1);
+  grades_add_grade(grade_list, course_name2, id2, grade2);
+  grades_print_student(grade_list, id2);
+  grades_print_all(grade_list);
+  return 0;
 }
