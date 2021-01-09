@@ -5,5 +5,7 @@ CMakeFiles/HW7.dir/grades.c.o: ../Include/linked-list.h
 CMakeFiles/HW7.dir/grades.c.o: ../grades.c
 CMakeFiles/HW7.dir/grades.c.o: ../grades.h
 
+CMakeFiles/HW7.dir/main.c.o: ../Include/linked-list.h
+CMakeFiles/HW7.dir/main.c.o: ../grades.h
 CMakeFiles/HW7.dir/main.c.o: ../main.c
 

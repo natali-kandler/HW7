@@ -61,6 +61,7 @@ int list_push_front(struct list *list, void *element);
  * @note Fails if "it" is NULL
  * @note Assumes that "it" points to element in "list",
  * the user must validate it
+ * /// how to validate it???????!!!!!!
  */
 int list_insert(struct list *list, struct node *it, void *element);
 

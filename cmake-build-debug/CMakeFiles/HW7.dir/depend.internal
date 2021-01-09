@@ -6,4 +6,6 @@ CMakeFiles/HW7.dir/grades.c.o
  /home/mamat/CLionProjects/HW7/grades.c
  /home/mamat/CLionProjects/HW7/grades.h
 CMakeFiles/HW7.dir/main.c.o
+ ../Include/linked-list.h
+ /home/mamat/CLionProjects/HW7/grades.h
  /home/mamat/CLionProjects/HW7/main.c

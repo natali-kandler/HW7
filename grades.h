@@ -8,7 +8,7 @@ struct grades;
  * @brief Initializes the "grades" data-structure.
  * @returns A pointer to the data-structure, of NULL in case of an error
  */
-struct grades* grades_init();//////////////
+struct grades* grades_init();//////////////before check!
 
 /**
  * @brief Destroys "grades", de-allocate all memory!
@@ -21,7 +21,7 @@ void grades_destroy(struct grades *grades);
  * @note Failes if "grades" is invalid, or a student with 
  * the same "id" already exists in "grades"
  */
-int grades_add_student(struct grades *grades, const char *name, int id);
+int grades_add_student(struct grades *grades, const char *name, int id);/////before check!
 
 /**
  * @brief Adds a course with "name" and "grade" to the student with "id"
@@ -57,7 +57,7 @@ float grades_calc_avg(struct grades *grades, int id, char **out);
  * @note The courses should be printed according to the order 
  * in which they were inserted into "grades"
  */
-int grades_print_student(struct grades *grades, int id);
+int grades_print_student(struct grades *grades, int id);/////before check!
 
 /**
  * @brief Prints all students in "grade", in the following format:

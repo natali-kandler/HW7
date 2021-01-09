@@ -6,9 +6,45 @@
 
 #IncludeRegexTransform: 
 
+../Include/linked-list.h
+stddef.h
+-
+
+/home/mamat/CLionProjects/HW7/grades.c
+assert.h
+-
+limits.h
+-
+math.h
+-
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+linked-list.h
+/home/mamat/CLionProjects/HW7/linked-list.h
+grades.h
+/home/mamat/CLionProjects/HW7/grades.h
+
+/home/mamat/CLionProjects/HW7/grades.h
+
 /home/mamat/CLionProjects/HW7/main.c
 stdio.h
 -
 stdbool.h
 -
+stdlib.h
+-
+linked-list.h
+/home/mamat/CLionProjects/HW7/linked-list.h
+grades.h
+/home/mamat/CLionProjects/HW7/grades.h
 
